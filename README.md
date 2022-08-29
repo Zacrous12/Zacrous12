@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @Zacrous12
-- 👀 I’m interested in ... Audio Design, Art and General Game Design
-- 🌱 I’m currently learning ... Unity C# UE5 and Wwise
-- 💞️ I’m looking to collaborate on ... Any game
+- 👋 Hi, I’m Zach Rouhana
+- 👀 I’m interested in ... Web Development, Design, and Full-Stack Development
+- 🌱 I’m currently learning ... MongoDB, NodeJS, and VisualBasic
+- 💞️ I’m looking to collaborate on ... Any Projects
 - 📫 How to reach me ... zrouhan12@hotmail.com
 
 <!---
