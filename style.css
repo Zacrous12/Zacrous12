@@ -1,0 +1,626 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #2E3192;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.first, .second, .third, .fourth, .fifth {
+  display: flex;
+  font-size: 1.5rem;
+  width: 100%;  
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80rem;
+  flex-wrap: wrap;
+}
+
+.headin {
+  display: flex;
+  justify-content: flex-end;
+  height: 5%;
+  background: linear-gradient(to left, #9cc3e3, white, #e8e8e8);
+  font-size: 2rem;
+  border-bottom: .1rem solid #9cc3e3;
+}
+
+.title {
+  font-size: 8rem;
+  margin-bottom: 2rem;
+}
+
+.first {
+  padding: 0 0 15rem 20rem;
+  align-items: flex-start;
+  background-image: url("https://www.opendoor.com/w/wp-content/uploads/2018/06/Real-estate-fundamentals-1.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+form {
+  width: 40%;
+  height: 4rem;
+  display: inline-flex;
+}
+
+input {
+  height: 4rem;
+  width: 90%;
+  font-size: 2.6rem;
+  box-shadow: 10px 10px 20px #a3a3a3;
+}
+
+button {
+  height: 4rem;
+  width: 12rem;
+  background-color: #2E3192;
+  color: white;
+  box-shadow: 10px 10px 20px #a3a3a3;
+}
+
+.socials {
+  display: flex;
+  padding-top: 3rem;
+  flex-direction: row;
+  width: 34rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  color: #2E3192;
+}
+
+.icon {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.icon + a {
+  margin-right: 5rem;
+}
+
+.srch {
+  height: 2rem;
+  width: 2rem;
+}
+
+.second {
+  border-top: 5px solid #a3a3a3;
+  border-bottom: 5px solid #a3a3a3;
+  padding-left: 90rem;
+  align-items: flex-start;
+  padding-right: 30rem;
+  background: url("https://i.imgur.com/akioFxb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.second p {
+  line-height: 2.1rem;
+}
+
+.title-second {
+  font-size: 6.5rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  margin: 0;
+}
+
+.third {
+  justify-content: flex-start;
+  background-color: rgb(230, 230, 230);
+}
+.third > .smallText {
+  margin-top: 8rem;
+}
+
+h5 {
+  font-size: 7rem;
+  margin: 2rem;
+}
+
+.categories {
+  width: 40%;
+  padding: 1rem 3rem 1rem 3rem;
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+.buy, .sell, .rent, .agents, .offices {
+  border-bottom: .1rem solid gray;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  border-collapse: collapse;
+  line-height: 5rem;
+  width: 20%;
+}
+
+.buy:hover, .sell:hover, .rent:hover, .agents:hover, .offices:hover {
+  border-color: #2E3192;
+  color: #2E3192;
+  font-weight: 700;
+  transition-property: color, border-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sqf {
+  font-size: 2rem;
+}
+
+.categories, .listings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.house1 {
+  background-image: url('https://media.istockphoto.com/photos/exterior-of-small-american-house-with-blue-paint-picture-id589538090?k=20&m=589538090&s=612x612&w=0&h=5obd9GWPEDn4AzSe7TYlBeLbGKtzOol-xPf0nL474eY=');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.house2 {
+  background-image: url('https://www.bhg.com/thmb/6eEIPnSTHE8tikMKfybFEbzYPI0=/400x0/filters:no_upscale():max_bytes(150000):strip_icc()/sage-green-cottage-rounded-doorway-arch-339bb974-a48fe4d270cd4dc38e762f60ff8312d3.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.house3 {
+  background-image: url('https://media.istockphoto.com/photos/small-red-brick-house-with-green-grass-picture-id1221023970?k=20&m=1221023970&s=612x612&w=0&h=riWBC4ckeUdHKHl2SCwpdtPzdzPqnQ4JxMc2RkSPBvs=');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.house4 {
+  background-image: url('https://media.istockphoto.com/photos/quaint-cape-cod-style-house-picture-id523693820?k=20&m=523693820&s=612x612&w=0&h=wZZZsgj8ZeJltRrp7_QTucYoaCAxEu2VyWsAz8k1gTg=');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.listings {
+  width: 80%;
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+.listings > section {
+  width: 22%;
+  padding: 8rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.6rem;
+  color: white;
+  background-color: rgba(128, 128, 128, 0);
+  height: 30rem;
+  line-height: 5rem;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.listings > section > div, .listings > section > a {
+  visibility:hidden;
+  opacity: 0;
+  transition: visibility .5s linear 300ms, opacity 500ms;
+}
+
+.listings > section > div:hover, .listings > section > a:hover {
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(128, 128, 128, 0.397);
+  transition: .5s linear 0s, opacity 500ms;
+}
+
+.listings > section:hover  {
+  background-blend-mode: difference;
+  background-color: rgba(128, 128, 128, 0.397);
+  transition: background-color .5s;
+}
+.listings > section:hover div, .listings > section:hover a {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility .5s linear 0s, opacity 500ms;
+}
+
+.listings button {
+  font-size: 1.6rem;
+  line-height: 4rem;
+  box-shadow: none;
+}
+
+.fourth {
+  font-size: 2rem;
+  border-top: 5px solid #a3a3a3;
+  border-bottom: 5px solid #a3a3a3;
+}
+
+.fourth-title {
+  font-size: 7rem;
+}
+
+.fourth p {
+  line-height: .5rem;
+  font-size: 2.5rem;
+}
+
+.background {
+  width: 12rem;
+  height: 12rem;
+  margin-bottom: 3rem;
+}
+
+.fifth {
+  justify-content: flex-start;
+  background: #e8e8e8;
+  background-image: url('http://clipart-library.com/images_k/business-people-transparent-background/business-people-transparent-background-10.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 50%;
+}
+
+.fifth-title {
+  font-size: 7rem;
+  margin: 2rem;
+}
+
+.fifth > .smallText {
+  padding-top: 8rem;
+}
+
+.apps {
+  flex-direction: row;
+}
+
+.apps > a {
+  margin: 3rem;
+}
+
+.apps > a:hover {
+  box-shadow: inset -10px -5px 10px  rgb(0, 0, 0);
+  border-radius: 5px;
+  transition: box-shadow .3s;
+}
+
+.headin > ul > a {
+  padding: 2rem;
+}
+
+.lefty {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.smallText {
+  font-size: 2rem;
+  color: #2E3192;
+}
+
+/* 
+
+MEDIA QUERIES 
+
+*/
+
+@media screen and (max-width:600px) {
+  html {
+    font-size: 45%;
+  }
+  .first, .second, .third, .fourth, .fifth {
+    flex-direction: column;
+    height: 100rem;
+    border: none;
+    text-align: center;
+  }  
+  .first {
+    padding: 0;
+    align-items: center;
+    height: 90rem;
+  }
+  form {
+    padding-bottom: 30rem;
+  }
+
+  .headin {
+    display: none;
+  }
+  .socials {
+    display: none;
+  }
+  h1 {
+    color: whitesmoke;
+  }
+  form > button {
+    display: none;
+  }
+  form, form > input {
+    height: 8rem;
+    width: 90%;
+    justify-content: center;
+  }
+  .second {
+    justify-content: center;
+    padding: 0;
+    width: 80%;
+    align-items: center;
+    align-content: center;
+    height: 80rem;
+    background: none;
+    padding-left: 10rem;
+  }
+  .third {
+    display: flexbox;
+    height: 170rem;
+  }
+  .categories {
+    display: none;
+  }
+  .listings {
+    flex-direction: column;
+    align-items: center;
+  }
+  .listings > section {
+    width: 60%;
+  }
+  .fourth p {
+    font-size: smaller;
+    padding-bottom: 4rem;
+    line-height: 0;
+  }
+  .apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fifth  {
+    height: 50rem;
+    background: #e8e8e8;
+  }
+  .fifth p {
+    width: 80%;
+    line-height: 3rem;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+  .srch, .lefty {
+    display: none;
+  }
+  h1 {
+    background: rgba(255, 255, 255, 0.37);
+  }
+  .first, .second, .third, .fourth, .fifth {
+    flex-direction: column;
+    height: 100rem;
+    border: none;
+    text-align: center;
+  }  
+  .first {
+    padding: 0;
+    align-items: center;
+    height: 90rem;
+  }
+  form {
+    padding-bottom: 10rem;
+  }
+  .socials {
+    font-size: 4rem;
+    justify-content: center;
+  }
+  form > button {
+    display: none;
+  }
+  form, form > input {
+    height: 8rem;
+    width: 90%;
+    justify-content: center;
+  }
+  .second {
+    display: inline-flexbox;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+    align-content: center;
+    height: 80rem;
+    background: none;
+    margin: 0;
+  }
+  .third {
+    display: flexbox;
+    height: 170rem;
+  }
+  .categories {
+    display: none;
+  }
+  .listings {
+    flex-direction: column;
+    align-items: center;
+  }
+  .listings > section {
+    width: 60%;
+  }
+  .fourth p {
+    font-size: smaller;
+    padding-bottom: 4rem;
+    line-height: 0;
+  }
+  .apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fifth  {
+    height: 40rem;
+    background: #e8e8e8;
+  }
+  .fifth p {
+    width: 80%;
+    line-height: 3rem;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  html {
+    font-size: 60%;
+  }
+  h1 {
+    background: rgba(255, 255, 255, 0.37);
+  }
+  .first, .second, .third, .fourth, .fifth {
+    flex-direction: column;
+    height: 100rem;
+    border: none;
+  }  
+  .first {
+    padding: 0;
+    align-items: flex-start;
+    height: 90rem;
+  }
+  form {
+    padding-bottom: 10rem;
+  }
+  .socials {
+    font-size: 4rem;
+    justify-content: center;
+  }
+  form > button {
+    display: none;
+  }
+  form, form > input {
+    height: 8rem;
+    width: 90%;
+    justify-content: center;
+  }
+  .second {
+    padding: 2rem;
+    align-items: flex-end;
+    height: 80rem;
+    margin: 0;
+  }
+  .second > p {
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .third {
+    display: flexbox;
+    height: 170rem;
+  }
+  .categories {
+    display: none;
+  }
+  .listings {
+    flex-direction: column;
+    align-items: center;
+  }
+  .listings > section {
+    width: 60%;
+  }
+  .fourth p {
+    font-size: smaller;
+    padding-bottom: 4rem;
+    line-height: 0;
+  }
+  .apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fifth  {
+    height: 70rem;
+  }
+  .fifth p {
+    width: 80%;
+    line-height: 3rem;
+  }
+}
+@media screen and (max-width: 1500px) and (min-width: 1200px) {
+
+  .first, .second, .third, .fourth, .fifth {
+    flex-direction: column;
+    height: 100rem;
+    border: none;
+  }  
+  .first {
+    height: 90rem;
+  }
+  form {
+    padding-bottom: 10rem;
+  }
+  .socials {
+    font-size: 4rem;
+  }
+  .second {
+    padding: 2rem;
+    align-items: flex-end;
+    height: 80rem;
+    margin: 0;
+  }
+  .second > p {
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .third {
+    display: flexbox;
+    height: 70rem;
+  }
+  .fourth p {
+    font-size: smaller;
+    padding-bottom: 4rem;
+    line-height: 0;
+  }
+  .fourth {
+    height: 80rem;
+  }
+  .fifth  {
+    height: 70rem;
+  }
+  .fifth p {
+    width: 80%;
+    line-height: 3rem;
+  }
+}
